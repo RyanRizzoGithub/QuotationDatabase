@@ -1,0 +1,38 @@
+/* 
+
+The one style sheet for Quotations 1
+
+Authors: Rick Mercer and Ryan Rizzo
+
+*/
+.container {
+	vertical-align: text-top;
+	border: 2px black solid;
+	border-radius: 7px;
+	padding: 5px;
+	margin: 5px;
+	font-size: 10pt;	
+}
+#form{
+	display: block;
+}
+
+#quote {
+	float: left;
+	width: 80%;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	
+}
+#author{
+	float: left;
+	width: 15%;
+	margin-left: 20px;
+	margin-right: 85%;
+	margin-bottom: 5px;
+}
+#button{
+	float: left;
+	margin-left: 20px;
+}

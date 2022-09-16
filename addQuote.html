@@ -1,0 +1,30 @@
+<!--  Author: Ryan Rizzo -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quotation Service</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<h2>Add a Quote</h2>
+<form onsubmit="addQuote();" id="form">
+	<textarea name="quote" id="quote" rows="6" placeholder="Enter new quote"></textarea>
+	<textarea name="author" id="author" rows="1" placeholder="Author"></textarea>
+	<input type="submit" value="Add Quote" id="button">
+</form>
+
+
+<script>
+	function addQuote() {
+	
+	var quote = document.getElementById("quote").value;
+	var author = document.getElementById("author").value;
+	
+	var ajax = new XMLHttpRequest();
+	ajax.open("GET", "controller.php?quote=" + quote + "&author=" + author, true);
+	ajax.send();
+}
+
+</script>
+	
+</body>
+</html>
